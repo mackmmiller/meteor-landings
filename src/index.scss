@@ -1,0 +1,65 @@
+$primary: #302d54; $secondary: #317197; $detail1: #d6aaa1; $detail2: #f24b4a;
+
+html,body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: $primary;
+}
+
+header, footer {
+	background: $secondary;
+}
+
+header {
+	padding: 1em;
+}
+
+main {
+	margin: 5% auto;
+	svg {
+		display: block;
+		margin: auto;
+		background: $detail2;
+	}
+	.country {
+	fill: #cccccc;
+	stroke: #333333;
+	stroke-width: 0.5;
+	}
+	.selected {
+		fill: yellow;
+	}
+	.impact {
+		opacity: .6;
+	}
+	div.tooltip {
+		position: absolute;
+		pointer-events: none;
+		text-align: center;
+		border: 3px solid $detail1;
+		border-radius: 5px;
+		background: $primary;
+		padding: 0.25em;
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0.25em;
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
+	a {
+		color: white;
+		&:hover {
+			color: $detail1;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}
